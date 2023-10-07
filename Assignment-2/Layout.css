@@ -1,0 +1,27 @@
+.con1{
+    background-color: aqua;
+    flex-direction: row;
+    width: 92%;
+    padding: 50px;
+    text-align: center;
+}
+.con2{
+    background-color: springgreen;
+    width: 33.3%;
+    margin-top: 10px;
+    padding: 50px;
+    flex-direction: column;
+    text-align: center;
+}
+.con3{
+    background-color: springgreen;
+    flex-direction: column;
+    width: 33.3%;
+    margin-top: 10px;
+    padding: 50px;
+    
+}
+.main-con{
+    background-color: blueviolet;
+    padding: 40px;
+}
