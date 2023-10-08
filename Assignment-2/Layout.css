@@ -1,27 +1,43 @@
+.main-con{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(58, 58, 146);
+    gap: 10px;
+    padding: 10px;
+}
 .con1{
-    background-color: aqua;
+    background-color: rgb(112, 112, 255);
+    display: flex;
     flex-direction: row;
-    width: 92%;
-    padding: 50px;
-    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: 
 }
 .con2{
-    background-color: springgreen;
-    width: 33.3%;
-    margin-top: 10px;
-    padding: 50px;
-    flex-direction: column;
-    text-align: center;
+    background-color: rgb(112, 112, 255);
+    padding: 150px;
+    justify-content: center;
 }
 .con3{
-    background-color: springgreen;
-    flex-direction: column;
-    width: 33.3%;
-    margin-top: 10px;
-    padding: 50px;
+    background-color: rgb(112, 112, 255);
+    padding: 250px;
+    justify-content: center;
+}
+.con4{
+    background-color: rgb(112, 112, 255);
+    padding: 150px;
+    text-align: center;
     
 }
-.main-con{
-    background-color: blueviolet;
-    padding: 40px;
+.con5{
+    background-color: rgb(112, 112, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
 }
