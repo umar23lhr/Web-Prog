@@ -3,35 +3,34 @@
     flex-direction: column;
     background-color: rgb(58, 58, 146);
     gap: 10px;
-    padding: 10px;
+    padding: 40px;
 }
 .con1{
     background-color: rgb(112, 112, 255);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 30px;
+    padding: 40px;
 }
 section{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    justify-content: 
+    justify-content: center;
+
 }
 .con2{
     background-color: rgb(112, 112, 255);
-    padding: 150px;
-    justify-content: center;
+    padding: 126px;
+    
 }
 .con3{
     background-color: rgb(112, 112, 255);
-    padding: 250px;
-    justify-content: center;
+    padding: 260px;
 }
 .con4{
     background-color: rgb(112, 112, 255);
-    padding: 150px;
-    text-align: center;
+    padding: 126px;
     
 }
 .con5{
@@ -39,5 +38,5 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 30px;
+    padding: 40px;
 }
