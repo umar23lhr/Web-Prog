@@ -12,7 +12,6 @@
     flex-direction: row;
     justify-content: center;
     padding: 40px;
-
 }
 section{
     display: flex;
@@ -20,21 +19,26 @@ section{
     gap: 10px;
     justify-content: center;
 
-
 }
 .con2{
+    display: flex;
     background-color: rgb(112, 112, 255);
     padding: 120px;
+    justify-content: center;
+    align-items: center;
     
 }
 .con3{
+    display: flex;
     background-color: rgb(112, 112, 255);
     padding: 250px;
+    align-items: center;
 }
 .con4{
+    display: flex;
     background-color: rgb(112, 112, 255);
     padding: 120px;
-    
+    align-items: center;
 }
 .con5{
     background-color: rgb(112, 112, 255);
@@ -42,5 +46,4 @@ section{
     flex-direction: row;
     justify-content: center;
     padding: 40px;
-
 }
