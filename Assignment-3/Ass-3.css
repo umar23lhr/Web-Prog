@@ -1,27 +1,55 @@
-.Main{
-    display: grid;
-    background-color: white;
-
+body{
+    padding: 0;
+    margin: 0;
 }
 .H{
     display: grid;
     display: inline;
     display: flex;
-    justify-content: right;
+    justify-content: right; 
 }
 .C1{
     display: grid;
     display: flex;
     justify-content: space-between;
     background-color: #2b343d;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,auto);
+    padding-right: 4vw;
+
 }
 .C1-1{
     font-size: x-large;
     color: white;
+    line-height: 4;
 }
-.C1-{
+.C1-2{
     font-size: larger;
     color: #576976;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+}
+.C2{
+    display: grid;
+    background-color: #ccced0;
+    
+}
+.C2-1{
+    font-size: xx-large;
+}
+.C3{
+    display: grid;
+    background-color: #ccced0;
+    
+}
+.C4{
+    display: grid;
+    background-color: #ccced0;
+    
+}
+.C5{
+    display: grid;
+    background-color: #ccced0;
+    
 }
