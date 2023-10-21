@@ -1,6 +1,6 @@
 .main{
     display: grid;
-    grid-template-rows: 100px 350px 30px 1fr 75px;
+    grid-template-rows: 100px 350px 30px 1fr;
 }
 .C1{
    background-color: aqua;
@@ -19,7 +19,6 @@
     align-items: end;
 }
 .H{
-    font-weight: 400;
     margin-right: 10px;
     margin-bottom: 2px;
 }
@@ -30,24 +29,23 @@
 }
 .C2-1{
     background-color: #2B343D;
-    padding: 100px;
+    padding: 70px
     
 
 }
 .C2-1-ex{
    font-weight: bolder;
-   font-size: x-large;
+   font-size: xx-large;
    color: white;
-   padding-bottom: 10px;
-
-   
+   padding-bottom: 10px; 
+   line-height: 80px;   
 
 }
 .C2-2-ex{
-font-size: large;
+font-size: x-large;
 font-weight: bolder;
 color: #57707C;
-margin-top:;
+
 
 }
 .C2-2{
@@ -56,11 +54,52 @@ margin-top:;
 }
 .C3{
 background-color: rgb(255, 255, 255);
-margin-top: 2px;
+margin-top: 5px;
 }
 .C4{
-background-color: violet;
+background-color: rgb(255, 255, 255);
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 20px;
+margin-top: 10px;
+gap: 20px;
 }
-.C5{
-background-color: brown;
+.arrow{
+    margin-right: 10px;
+}
+.C4-1{
+    display: grid;
+    background-color: #CCCED0;
+    padding: 30px;
+    
+}
+.im1{
+    margin-top: 10px;
+}
+.C4-2{
+    display: grid;
+    background-color: #CCCED0;
+    padding: 30px;
+}
+.C4-3{
+    display: grid;
+    background-color: #CCCED0;
+    padding: 30px;
+}
+.C4-4{
+    display: grid;
+    background-color: #CCCED0;
+    padding: 30px;
+}
+footer{
+background-color: rgb(255, 255, 255);
+}
+.email{
+    color: purple
+}
+span,h1,footer{
+    font-family: Calibri, sans-serif
+}
+.t2{
+    color: #4d4d4d;
 }
