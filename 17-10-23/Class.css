@@ -1,6 +1,6 @@
 .main{
     display: grid;
-    grid-template-rows: 100px 350px 30px 1fr 75px;
+    grid-template-rows: 100px 350px 40px 1fr 75px;
 }
 .C1{
    background-color: aqua;
@@ -56,7 +56,6 @@ margin-top:;
 }
 .C3{
 background-color: rgb(255, 255, 255);
-margin-top: 2px;
 }
 .C4{
 background-color: violet;
