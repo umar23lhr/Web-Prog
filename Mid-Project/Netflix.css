@@ -45,3 +45,10 @@ h2{
     margin: 25px 0 65px;
     
  }
+ form,.fc{
+    height: 50px;
+ }
+ .fc input{
+    height: 100%;
+    width: 100%;
+ }
