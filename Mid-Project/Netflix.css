@@ -1,54 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto' , sans-serif;
- }
- body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
     background: #000;
- }
- body::before{
+}
+
+body::before {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
     opacity: 0.5;
-    background: url(./Background.jpg);
+    width: 100%;
+    height: 150%;
+    background: url("./Background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     background-position: center;
- }
- nav{
-    position: fixed;
-    z-index: 1;
-    padding: 25px 60px;
- }
- nav a img {
-    width: 160px;
- }
- .form-r{
+}
+
+.logo {
+    position: relative;
+    padding: 40px;
+    background-image: url(./logo.svg);
+    background-repeat: no-repeat;
+    background-size: 13%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.form-r {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 430px;
-    padding: 60px;
     border-radius: 4px;
-    background: rgb(0, 0,0,0.75);
+    padding: 70px;
+    width: 450px;
     transform: translate(-50%, -50%);
- }
-h2{
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.form-r h2 {
     color: #fff;
     font-size: 2rem;
- }
- .form-r,form{
+}
+
+.form-r form {
     margin: 25px 0 65px;
-    
- }
- form,.fc{
+}
+
+form .fc {
     height: 50px;
- }
- .fc input{
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.fc input {
     height: 100%;
     width: 100%;
- }
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.fc input:is(:focus, :valid) {
+    background: #444;
+    padding: 16px 20px 0;
+}
+
+.fc label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+
+.fc input:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #e50914;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+form button:hover {
+    background: #c40812;
+}
+
+.form-r a {
+    text-decoration: none;
+}
+
+.form-r a:hover {
+    text-decoration: underline;
+}
+
+.form-r :where(label, p, small, a) {
+    color: #b3b3b3;
+}
+
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .remember-me {
+    display: flex;
+}
+
+form .remember-me input {
+    margin-right: 5px;
+    accent-color: #b3b3b3;
+}
+
+form .form-help :where(label, a) {
+    font-size: 0.9rem;
+}
+
+.form-r p a {
+    color: #fff;
+}
+
+.form-r small {
+    display: block;
+    margin-top: 15px;
+    color: #b3b3b3;
+}
+
+.form-r small a {
+    color: #0071eb;
+}
+/* .end{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding: 70px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+} */
+
+
+@media (max-width: 740px) {
+    body::before {
+        display: none;
+    }
+
+    nav, .form-r {
+        padding: 20px;
+    }
+
+    nav a img {
+        width: 140px;
+    }
+
+    .form-r {
+        width: 100%;
+        top: 43%;
+    }
+
+    .form-r form {
+        margin: 25px 0 40px;
+    }
+}
+.main-footer{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 40vh;
+}
+.footer {
+    max-width: 70%;
+    display: flex;
+    margin: 1rem auto;
+    overflow: auto;
+    z-index: 3;
+    position: relative;
+    margin-top: 600px;
+    padding: 10px
+  }
+  .footer,.footer a {
+    color: #999;
+    font-size: 0.9rem;
+  }
+  .footer p {
+    margin-bottom: 1.5rem;
+  }
+  .footer .footer-cols {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    z-index: 1;
+  }
+  .footer, span {
+    line-height: 1.9;
+    display: grid;
+  }
+  /* .footer .lang-select {
+    position: relative;
+    margin-top: 2rem;
+    color: #999;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+    z-index: 1;
+  } */
