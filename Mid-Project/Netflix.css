@@ -195,20 +195,19 @@ form .form-help :where(label, a) {
     position: relative;
     background-color: rgba(0, 0, 0, 0.75);
     height: 40vh;
+    margin-top: 93vh;
 }
 .footer {
-    max-width: 70%;
-    display: flex;
-    margin: 1rem auto;
-    overflow: auto;
-    z-index: 3;
-    position: relative;
-    margin-top: 600px;
-    padding: 10px
+    position: absolute;
+    padding: 20px;
+    width: 70%;
+    margin-left: 50vh;
+    margin-top: 8vh;
   }
   .footer,.footer a {
     color: #999;
-    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
   }
   .footer p {
     margin-bottom: 1.5rem;
@@ -216,11 +215,14 @@ form .form-help :where(label, a) {
   .footer .footer-cols {
     position: relative;
     display: grid;
+    font-size: small;
     grid-template-columns: repeat(4, 1fr);
+    overflow: visible;
     grid-gap: 2rem;
     z-index: 1;
+    
   }
-  .footer, span {
+  .footer, ul {
     line-height: 1.9;
     display: grid;
   }
