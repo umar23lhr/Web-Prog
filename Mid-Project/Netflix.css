@@ -25,15 +25,21 @@ body::before {
     background-position: center;
 }
 
-.logo {
+.logo-box {
     position: relative;
-    padding: 40px;
-    background-image: url(./logo.svg);
-    background-repeat: no-repeat;
-    background-size: 13%;
-    margin-left: 50px;
-    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 100px;
+
+    left: 0;
+    top: 0;
 }
+.logo-box img{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 50%;
+}
+
 
 .form-r {
     position: absolute;
@@ -156,18 +162,6 @@ form .form-help :where(label, a) {
 .form-r small a {
     color: #0071eb;
 }
-/* .end{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-    padding: 70px;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.75);
-} */
-
 
 @media (max-width: 740px) {
     body::before {
@@ -195,7 +189,7 @@ form .form-help :where(label, a) {
     position: relative;
     background-color: rgba(0, 0, 0, 0.75);
     height: 40vh;
-    margin-top: 93vh;
+    margin-top: 96vh;
 }
 .footer {
     position: absolute;
@@ -208,7 +202,9 @@ form .form-help :where(label, a) {
     color: #999;
     display: flex;
     justify-content: space-between;
+    text-decoration: none;
   }
+
   .footer p {
     margin-bottom: 1.5rem;
   }
@@ -226,14 +222,3 @@ form .form-help :where(label, a) {
     line-height: 1.9;
     display: grid;
   }
-  /* .footer .lang-select {
-    position: relative;
-    margin-top: 2rem;
-    color: #999;
-    background-color: #000;
-    background-image: none;
-    border: 1px solid #333;
-    padding: 1rem 1.2rem;
-    border-radius: 5px;
-    z-index: 1;
-  } */
