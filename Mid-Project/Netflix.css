@@ -187,14 +187,26 @@ form .form-help :where(label, a) {
     .main-footer {
         display: none;
     }
-
-   
+    .logo-box{
+        display: block;
+        z-index: 2;
+    }
+    .form-r{
+        margin-top: 40px;
+    }
+    .main-footer{
+        display: block;
+        width: 0;
+    }
+    .footer-cols ul{
+        font-size: smaller;
+    }  
 }
 .main-footer{
     position: relative;
     background-color: rgba(0, 0, 0, 0.75);
     height: 40vh;
-    margin-top: 94vh;
+    margin-top: 95vh;
 }
 .footer {
     position: absolute;
@@ -207,7 +219,6 @@ form .form-help :where(label, a) {
   .footer,.footer a {
     color: #999;
     display: flex;
-
     justify-content: space-between;
     text-decoration: none;
   }
