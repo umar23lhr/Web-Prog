@@ -6,3 +6,15 @@ if (result=40)
 else{
     console.log("Unfortunately you did not pass.")
 }
+// -------------------------------------------------------
+var food = "cold";
+if(food=="hot"){
+    console.log('Too hot')
+}
+else if (food=="cold"){
+    console.log('Too cold')
+}
+else{
+    console.log('Just Right')
+}
+// ------------------------------------------------------------
