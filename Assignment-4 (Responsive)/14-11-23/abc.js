@@ -18,3 +18,20 @@ else{
     console.log('Just Right')
 }
 // ------------------------------------------------------------
+var place = 'second';
+switch (place) {
+    case 'first':
+        console.log('Gold')
+        break;
+    case 'second':
+        console.log('Silver')
+        break;
+    case 'third':
+        console.log('Bronze')
+        break;
+
+    default:
+        console.log('No Medal')
+        break;
+}
+// ----------------------------------------------------------
