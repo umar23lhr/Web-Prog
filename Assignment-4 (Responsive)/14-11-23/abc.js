@@ -34,4 +34,28 @@ switch (place) {
         console.log('No Medal')
         break;
 }
-// ----------------------------------------------------------
+// ---------------------------------------------------------- LOOP -------------------------------------------
+var i=1;
+for(i=1;i<4;i++){
+    console.log(i);
+}
+
+for(var j=1;j<4;j++){
+    console.log(j);
+}
+var counter=3;
+while(counter>0){
+    console.log(counter);
+    counter = counter-1;
+}
+var counter1=3;
+while(counter1>0){
+    counter1 = counter1-1;
+    console.log(counter1);
+}
+//---------------------------------------------------------------
+for(var i=0; i<2;i++){
+    for(var j=1; j<=7; j++){
+        console.log("week" + i + "day" +j);
+    }
+}
