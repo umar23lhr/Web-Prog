@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let abc1 = "Get groceries";
+        let abc2 = "Wash Car";
+        let abc3 = "Make Dinner";
+
+        function addabc(abclabel) {
+            elem = document.createElement('div');
+            elem.innerText = abclabel;
+            document.body.appendChild(elem);
+        }
+        
+        addabc(abc1);
+        addabc(abc2);
+        addabc(abc3);
+        
+    </script>
+</body>
+</html> -->
+
+<!-- ---------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let abc1 = "Get groceries";
+        // let abc2 = "Wash Car";
+        // let abc3 = "Make Dinner";
+
+        let abc = ['Abc1', 'Abc2' , 'Abc3'];
+        abc.push('New');
+        abc.push('Zaid');
+        function addabc(addtitle){
+            let elem = document.createElement('div')
+            elem.innerText = addtitle ;
+            document.body.appendChild(elem);
+        }
+        for (let i=0;i<abc.length;i++)
+        {
+            addabc(abc[i]);
+        }
+    </script>
+</body>
+</html>
