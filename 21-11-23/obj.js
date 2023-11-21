@@ -1,9 +1,9 @@
-// Math.random;
-// var decimal = Math.random();
-// console.log(decimal); 
-// console.log(decimal * 10);
-// var round = Math.trunc(decimal*10);
-// console.log(round); 
+Math.random;
+var decimal = Math.random();
+console.log(decimal); 
+console.log(decimal * 10);
+var round = Math.trunc(decimal*10);
+console.log(round); 
 // ----------------------------------------------------
 var string1 = "la-la-la";
 console.log(string1.indexOf('l'));
