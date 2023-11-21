@@ -38,15 +38,18 @@
         let abc = ['Abc1', 'Abc2' , 'Abc3'];
         abc.push('New');
         abc.push('Zaid');
-        function addabc(addtitle){
+        abc.push('Umar')
+        
+        abc.forEach(function (addtitle){   // Anonymous Func
             let elem = document.createElement('div')
             elem.innerText = addtitle ;
             document.body.appendChild(elem);
-        }
-        for (let i=0;i<abc.length;i++)
-        {
-            addabc(abc[i]);
-        }
+        });
+
+        // for (let i=0;i<abc.length;i++)
+        // {
+        //     addabc(abc[i]);
+        // }
     </script>
 </body>
 </html>
