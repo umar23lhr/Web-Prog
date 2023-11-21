@@ -1,0 +1,11 @@
+var clothes = [];
+clothes.push("A");
+clothes.push("B");
+clothes.push("C");
+clothes.push("D");
+clothes.push("E");
+console.log(clothes);
+clothes.pop();
+console.log(clothes);
+clothes.push("Last");
+console.log(clothes);
