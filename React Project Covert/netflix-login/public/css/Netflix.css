@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #000;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 150%;
+    background: url("../Img/Background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-box {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 100px;
+
+    left: 0;
+    top: 0;
+}
+.logo-box img{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 50%;
+}
+
+
+.form-r {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 4px;
+    padding: 70px;
+    width: 450px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.form-r h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.form-r form {
+    margin: 25px 0 65px;
+}
+
+form .fc {
+    height: 50px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.fc input {
+    height: 100%;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.fc input:is(:focus, :valid) {
+    background: #444;
+    padding: 16px 20px 0;
+}
+
+.fc label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+
+.fc input:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #e50914;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+form button:hover {
+    background: #c40812;
+}
+
+.form-r a {
+    text-decoration: none;
+}
+
+.form-r a:hover {
+    text-decoration: underline;
+}
+
+.form-r :where(label, p, small, a) {
+    color: #b3b3b3;
+}
+
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .remember-me {
+    display: flex;
+}
+
+form .remember-me input {
+    margin-right: 5px;
+    accent-color: #b3b3b3;
+}
+
+form .form-help :where(label, a) {
+    font-size: 0.9rem;
+}
+
+.form-r p a {
+    color: #fff;
+}
+
+.form-r small {
+    display: block;
+    margin-top: 15px;
+    color: #b3b3b3;
+}
+
+.form-r small a {
+    color: #0071eb;
+}
+
+@media (max-width: 740px) {
+    body::before {
+        display: none;
+    }
+
+    nav, .form-r {
+        padding: 20px;
+    }
+
+    nav a img {
+        width: 140px;
+    }
+
+    .form-r {
+        width: 100%;
+        top: 43%;
+    }
+    .form-r form {
+        margin: 25px 0 40px;
+    }
+    .main-footer {
+        display: none;
+    }
+    .logo-box{
+        display: block;
+        z-index: 2;
+    }
+    .form-r{
+        margin-top: 40px;
+    }
+    .main-footer{
+        display: block;
+        width: 0;
+    }
+    .footer-cols ul{
+        font-size: smaller;
+    }  
+}
+.main-footer{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 40vh;
+    margin-top: 95vh;
+}
+.footer {
+    position: absolute;
+    padding: 20px;
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 3%;
+    
+  }
+  .footer,.footer a {
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+  .footer p {
+    margin-bottom: 1.5rem;
+  }
+  .footer .footer-cols {
+    position: relative;
+    display: grid;
+    font-size: small;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: visible;
+    grid-gap: 6rem;
+    z-index: 1;
+  }
+  .footer, ul {
+    line-height: 1.9;
+    display: grid;
+  }
