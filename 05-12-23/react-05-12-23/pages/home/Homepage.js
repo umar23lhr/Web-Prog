@@ -6,21 +6,7 @@ import Third from '../../components/thirsd/Third'
 const Homepage = () => {
   return (
     <div className='home-main'>
-        <div>
-        <Myfirst/>
-        </div>
-
-        <div>
-        <Myfirst/>
-        <Second/>
-        <Third/>
-        </div>
-
-        <div>
-        <Third/>
-        </div>
-
-
+    
     </div>
   )
 }
